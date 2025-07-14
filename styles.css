@@ -1,0 +1,134 @@
+/* ---------------- Reset ---------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------------- Body ---------------- */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f7f5;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* ---------------- Header ---------------- */
+header {
+  background-color: #b0e0d3;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #1b4d3e;
+}
+
+/* ---------------- Quote of the Day ---------------- */
+#quote-text {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* ---------------- Section Styling ---------------- */
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------- Form Elements ---------------- */
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form select,
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #56c596;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #449d7b;
+}
+
+/* ---------------- Quiz Result ---------------- */
+#quiz-result {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2e7d5d;
+}
+
+/* ---------------- Resource Results ---------------- */
+#support-results {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+}
+
+#support-results li {
+  background-color: #f9fcfb;
+  border-left: 5px solid #56c596;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  line-height: 1.5;
+}
+
+/* ---------------- Responsive Layout ---------------- */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header, main, section {
+    width: 100%;
+  }
+
+  input, button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #quote-text {
+    font-size: 1rem;
+  }
+}
+

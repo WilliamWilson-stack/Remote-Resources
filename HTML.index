@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remote Resources</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Remote Resources</h1>
+    <nav>
+      <ul>
+        <li><a href="#quote-section">Quote of the Day</a></li>
+        <li><a href="#quiz-section">Self-Assessment</a></li>
+        <li><a href="#support-section">Find Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Quote of the Day -->
+    <section id="quote-section">
+      <h2>Quote of the Day</h2>
+      <p id="quote-text">Loading quote...</p>
+    </section>
+
+    <!-- Self-Assessment Quiz -->
+    <section id="quiz-section">
+      <h2>Self-Assessment Quiz</h2>
+      <form id="quiz-form">
+        <div>
+          <label>How are you feeling today?</label><br />
+          <input type="radio" name="mood" value="great" /> Great<br />
+          <input type="radio" name="mood" value="okay" /> Okay<br />
+          <input type="radio" name="mood" value="bad" /> Not good<br />
+        </div>
+        <button type="submit">Submit Quiz</button>
+      </form>
+      <div id="quiz-result"></div>
+    </section>
+
+    <!-- Support Resource Finder -->
+    <section id="support-section">
+      <h2>Find Mental Health Support</h2>
+      <input type="text" id="zipcode-input" placeholder="Enter ZIP code" />
+      <button id="search-button">Search</button>
+      <ul id="support-results"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 William Joe Wilson — Remote Resources</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
